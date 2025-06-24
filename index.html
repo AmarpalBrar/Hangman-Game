@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.scss"> -->
+    <script src="script/script.js" defer ="defer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <div class="game-container1">
+      <div class="title-container">
+    <div class="hangman-titlebg">
+      <img id="hangmanbgtitle" src="images/hangman-titlebg.png" alt="HangmanTitle" />
+      <h1 class="hangman-title">HANGMAN</h1>
+    </div>
+     <img id="hangmanImage" src="images/hangman-main.png" alt="Hangman" />
+     </div>
+    <!-- <img id="hangmanname" src="images/hangman-name.png" alt="Hangman" /><br> -->
+   
+    
+    <div class="game-container">
+    <div id="word_display" class="word-display">_ _ _ _</div>
+    <div class="status-container">
+    <div class="hint-box">Hint: <span id="hint"></span></div>
+    <div class="incorrect-box">Incorrect guesses: <span id="incorrectCount">0</span>/7</div>
+    </div>
+    <div id="message" class="message"></div>
+    <div id="letter-buttons" class="letter-buttons"></div>
+
+    <div id="game-popup" class="popup hidden">
+      <div class="popup-content">
+         <h2 id="popup-message"></h2>
+         <img id="popup-image" src="" \>
+         <button class="popbutton" onclick="resetGame()">Play Again</button>
+      </div>
+    </div>
+
+    <div class="instruction">Guess a letter from the mystery word... You have a limited number of chances to guess the entire word.<br />Unfortunately, Kenny McCormick will suffer the consequences for each wrong guess.</div>
+   
+    </div>
+
+     <button id="playAgain" class="play-again" style="display: none;">Play Again</button>
+  </div>
+</body>
+</html>
