@@ -39,14 +39,14 @@ body {
 }
 .hangman-title {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-family: 'Special Elite', cursive;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .letter-btn {
@@ -237,8 +237,9 @@ h2#popup-message{
   }
 
   .popbutton {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 25px;
+    padding: 20px;
+    margin: auto;
   }
 
   .instruction {
